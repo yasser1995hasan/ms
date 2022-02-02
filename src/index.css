@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+thumb {
+  @apply w-[100px]  rounded focus:opacity-10 cursor-pointer;
+}
+
+.slide {
+  @apply top-16 w-full h-52 absolute  order-2 sm:hidden opacity-0;
+}
+
+.btn-Slide {
+  @apply w-[60px] h-[60px] border absolute  flex justify-center text-center cursor-pointer;
+}
+
+.next {
+  @apply absolute top-52  right-[20px] translate-y-6 hover:cursor-pointer;
+}
+
+.prev {
+  @apply top-52 absolute left-[20px] translate-y-6 hover:cursor-pointer;
+}
+
+.activeAnim {
+  opacity: 1;
+}

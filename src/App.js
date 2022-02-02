@@ -1,4 +1,5 @@
 import "./App.css";
+import Corousel from "./components/Corousel";
 import Mobile from "./components/Mobile";
 
 function App() {
@@ -78,7 +79,12 @@ function App() {
           </span>
         </div>
       </header>
-      <Mobile />
+      <div className="md:hidden">
+        <Mobile />
+      </div>
+      <div>
+        <Corousel />
+      </div>
     </div>
   );
 }
